@@ -2,7 +2,7 @@
 
 // -> var - armazenar informações
 // -> let - variável de escopo
-// -> const
+// -> const - variável que não pode ser alterada
 
 var pote="bombom"
 alert(pote)
@@ -33,3 +33,12 @@ let x = 10
   alert(x)//2
 }
 alert(x) //10
+
+const a =10
+
+{
+const a = 4
+}
+
+
+console.log(a)//erro
