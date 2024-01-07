@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprendendo js</title>
+   
+  </head>
+  <body >
+
+  <!-- 1 clique -->
+  <button onclick="eventoClique()">Clique aqui</button>
+  <!-- 2 liques seguidos -->
+  <button ondblclick="eventoDuploClique()">DuploClique</button>
+    <br>
+    <br>
+
+    <div id="teste" onmouseout="viraAzul()" onmouseover="viraVermelho()" onmousemove="adicionaTexto()" style="width: 80vw; height:20vh; background-color: blueviolet;"></div>
+
+    <p id="texto"></p>
+
+
+    <br>
+    <br>
+
+    <input onfocus="limpaTexto()"  id="campoTexto" type="text" style="pad: 80px; font-size: 40px;" placeholder="
+    Digite um texto" value="já vem com texto">
+  <script src="index.js"></script>
+  </body>
+</html>

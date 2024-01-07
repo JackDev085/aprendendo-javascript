@@ -17,7 +17,3 @@ console.log(carro)
 console.log(carro['marca']) //acessando elemento do objeto carro
 console.log(carro.completo())
 // console.log(carro.buzina())
-
-class jogo{
-
-}
