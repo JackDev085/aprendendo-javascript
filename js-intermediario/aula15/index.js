@@ -1,5 +1,4 @@
 const notas = [];
-
 notas.push(5)
 notas.push(6)
 notas.push(4)
