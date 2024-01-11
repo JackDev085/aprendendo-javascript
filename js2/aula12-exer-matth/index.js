@@ -1,0 +1,9 @@
+let numero = Number(prompt('Digite um número'))
+document.getElementById('titulo').innerHTML=numero
+let numeroTitulo =document.getElementById('texto')
+numeroTitulo.innerHTML =`${numero**0.5} `
+numeroTitulo.innerHTML +=`<br>${numero} é inteiro: ${Number.isInteger(numero)}`
+numeroTitulo.innerHTML +=`<br>É NaN: ${Number.isNaN(numero)}`
+numeroTitulo.innerHTML +=`<br>arredondando para baixo: ${Math.floor(numero)} `
+numeroTitulo.innerHTML +=`<br>arredondando para cima: ${Math.ceil(numero)} `
+numeroTitulo.innerHTML +=`<br>Com duas casas decimais: ${Math.round(numero)} `
