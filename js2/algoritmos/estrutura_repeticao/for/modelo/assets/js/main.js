@@ -21,3 +21,10 @@ for (let i = 0; i < elementos.length; i++) {
 }
 
 container.appendChild(div);
+
+var b = document.getElementsByClassName(".button");
+
+function clicou() {
+  b.setAttribute("disabled", "disabled");
+  b.style.background('black')
+}
