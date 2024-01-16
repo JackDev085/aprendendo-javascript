@@ -1,0 +1,42 @@
+
+const pessoa = {
+  nome:'Luiz',
+  sobrenome:'Otávio',
+  idade:30
+};
+// Iterando sobre um objeto,s imprimindo suas chaves
+pr = pessoa[0]
+console.log(pr)
+for (let chave in pessoa){
+  console.log(chave, pessoa[chave])
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const frutas = ['Pera', 'Maca' , 'Uva']
+// For que irá iterar sobre todos os elementos do array
+for (let i in frutas) {
+  // console.log(frutas[i])
+}
+// Pera
+// Maca
+// Uva
+//for padrão
+// for (let i = 0; i < frutas.length; i++) {
+//   const element = frutas[i];
+//   console.log(element)
+// }
