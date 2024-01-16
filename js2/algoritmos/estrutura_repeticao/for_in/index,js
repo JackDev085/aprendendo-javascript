@@ -5,8 +5,7 @@ const pessoa = {
   idade:30
 };
 // Iterando sobre um objeto,s imprimindo suas chaves
-pr = pessoa[0]
-console.log(pr)
+
 for (let chave in pessoa){
   console.log(chave, pessoa[chave])
 }
