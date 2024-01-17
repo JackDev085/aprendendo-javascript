@@ -10,7 +10,4 @@ const backgroundColorBody =estiloBody.background
 for(i in p){
   p[i].style.background=backgroundColorBody
   p[i].style.color="white"
-
-
 }
-
