@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  pad: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #322A26;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  height: 40vh;
+  background-color: #191308;
+  margin: 0 auto;
+  color: #8389A9;
+  font-size: 50px;
+  font-weight: 700;
+}
+.container h1{
+  font-size: 3rem;
+  font-weight: 700;
+  color: #9CA3DB;
+}
+.botoes{
+  display: flex;
+  flex-direction: row;
+}
+.pausado{
+  color: #C3602E;
+}
+.rodando{
+  color: #50A433;
+}
