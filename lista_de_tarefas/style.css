@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul li{
+  list-style: none;
+  pad: 0;
+}
+.main{
+  width: 100%;
+  height: 100vh;
+  background-color: #816E94;
+}
+.content{
+  width: 80%;
+  height: 80%;
+  background-color: #8CC7A1;
+  margin: 0 auto;
+  text-align: center;
+}
+.content ul{
+  text-align: left;
+  padding:10px
+}
