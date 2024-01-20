@@ -6,6 +6,7 @@ function criaHoraDosSegundos(segundos) {
     timeZone: 'GMT'
   })
 }
+// mostra a hora atual
 console.log(criaHoraDosSegundos(1));
 // criando variavies do dom
 const relogio = document.querySelector('.relogio');
