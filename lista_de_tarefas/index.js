@@ -14,6 +14,7 @@ function limpaInput(){
   input.focus() // coloca o cursor no input
 } 
 
+// cria um botao apagar e adiciona ao li
 function criaBotaoApagar(li){
   li.innerText += ' ' // adiciona um espaco
   const botaoApagar = document.createElement('button') // cria um botao
@@ -21,6 +22,7 @@ function criaBotaoApagar(li){
   li.appendChild(botaoApagar) // adiciona o botao ao li
   botaoApagar.setAttribute('class', 'apagar') // adiciona uma classe ao botao
 }
+// cria uma tarefa
 function criaTarefas(textoInput){
   const li = criarLi()
   li.innerText = textoInput // adiciona o texto do input ao li  
@@ -30,11 +32,12 @@ function criaTarefas(textoInput){
   salvarTarefas() // salva as tarefas
 }
 
+// adiciona um evento de click no botao 
 btn.addEventListener('click', function(event) {  
   criaTarefas(input.value); // cria uma tarefa
 });
 
-
+// adiciona um evento de click no input
 input.addEventListener('keypress', function(e) {
   if (e.keyCode === 13) {
     if (!input.value) return;
@@ -42,6 +45,7 @@ input.addEventListener('keypress', function(e) {
     criaTarefas(input.value);
   }
 });
+// adiciona um evento de click na ul
 document.addEventListener('click', function(e){
   const el = e.target
   if(el.classList.contains('apagar')){
@@ -50,6 +54,7 @@ document.addEventListener('click', function(e){
   }
 });
 
+// salvando as tarefas
 function salvarTarefas(){
   const liTarefas = tarefas.querySelectorAll('li')
   const listaDeTarefas = []
@@ -63,7 +68,7 @@ function salvarTarefas(){
   localStorage.setItem('tarefas', tarefasJSON) // salva no local storage em json
 }
 
-
+// criando as tarefas salvas
 function adicionaTarefasSalvas(){
   const tarefas = localStorage.getItem('tarefas') // pega as tarefas salvas
   const listaDeTarefas = JSON.parse(tarefas) // transforma em array
