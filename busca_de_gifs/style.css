@@ -1,0 +1,44 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+label {
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+input {
+  font-size: 1em;
+  padding: 5px;
+}
+
+button {
+  font-size: 1em;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#gifContainer {
+  margin-top: 20px;
+}
+
+#gifContainer img {
+  margin: 5px;
+  max-width: 100%;
+  border-radius: 8px;
+}
