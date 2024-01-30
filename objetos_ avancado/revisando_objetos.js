@@ -24,3 +24,14 @@ function criaPessoa(nome,sobrenome){
 }
 p1 = criaPessoa("Julio", "Alberto")
 console.log(p1.nomeCompleto)
+
+
+// funcao construtuora
+
+function Pessoa(nome, sobrenome){
+  this.nome = nome
+  this.sobrenome= sobrenome
+}
+
+const p = new Pessoa("Julio" ,"verne")
+console.log(p)
