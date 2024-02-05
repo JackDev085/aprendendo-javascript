@@ -3,7 +3,6 @@ const falar = {
     console.log(`${this.nome} está falando.`);
   },
 };
-
 const comer = {
   comer() {
     console.log(`${this.nome} está comendo.`);
